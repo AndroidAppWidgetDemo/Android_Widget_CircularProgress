@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!--进度view-->
+    <com.pascalwelsch.circularprogressbarsample.CircularProgressBar
+        android:id="@+id/CircularProgressBar"
+        android:layout_width="192dp"
+        android:layout_height="191dp"
+        android:background="@drawable/wminutes_progress_bg"
+        app:mask_id="@drawable/wminutes_progress_mask"
+        app:progress="0.5"
+        app:progress_color="#f4ebd6"
+        app:progress_padding="13dp" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zero"
+        android:layout_alignBottom="@+id/zero"
+        android:layout_toRightOf="@+id/zero"
+        android:text="0到1的动画" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="1到0的动画" />
+
+
+</RelativeLayout>
