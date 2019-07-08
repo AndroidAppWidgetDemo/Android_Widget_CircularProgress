@@ -2,10 +2,28 @@
 <resources>
 
     <declare-styleable name="CircularProgressBar">
-        <attr name="progress" format="float" />
-        <attr name="progress_padding" format="dimension" />
-        <attr name="progress_color" format="color" />
-        <attr name="mask_id" format="integer" />
+        <attr name="c_progress" format="float" />
+        <attr name="c_progress_padding" format="dimension" />
+        <attr name="c_progress_color" format="color" />
+        <attr name="c_mask_id" format="integer" />
+
+    </declare-styleable>
+
+
+    <!--横向 进度条-->
+    <declare-styleable name="HorizontalProgressBar">
+        <!--进度高-->
+        <attr name="h_progress_height" format="dimension" />
+        <!--圆角大小-->
+        <attr name="h_progress_radius" format="dimension" />
+        <!--进度颜色 begin-->
+        <attr name="h_progress_color_start" format="color" />
+        <!--进度颜色 end-->
+        <attr name="h_progress_color_end" format="color" />
+        <!--背景颜色-->
+        <attr name="h_progress_bg_color" format="color" />
+        <!--进度-->
+        <attr name="h_progress" format="float" />
 
     </declare-styleable>
 

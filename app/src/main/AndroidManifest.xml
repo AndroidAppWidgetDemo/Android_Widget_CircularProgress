@@ -13,8 +13,10 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+        <!--list-->
         <activity
-            android:name="com.pascalwelsch.circularprogressbarsample.MainBarActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +24,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--圆形-->
+        <activity
+            android:name=".CircularBarActivity"
+            android:label="@string/app_name"></activity>
+        <!--圆形-->
+        <activity
+            android:name=".HorizontalBarActivity"
+            android:label="@string/app_name"></activity>
+
     </application>
 
 </manifest>

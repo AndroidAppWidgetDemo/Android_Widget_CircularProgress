@@ -1,18 +1,17 @@
 package com.pascalwelsch.circularprogressbarsample;
 
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
-import android.animation.ValueAnimator.AnimatorUpdateListener;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.pascalwelsch.circularprogressbarsample.widget.CircularProgressBar;
+
 /**
  *
  */
-public class MainBarActivity extends Activity {
+public class CircularBarActivity extends Activity {
     //
     private CircularProgressBar mCircularProgressBar;
     //
@@ -24,7 +23,7 @@ public class MainBarActivity extends Activity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //
-        setContentView(R.layout.main_activity);
+        setContentView(R.layout.activity_circular);
         // 进度条
         mCircularProgressBar = (CircularProgressBar) findViewById(R.id.CircularProgressBar);
         // 从0到1的动画

@@ -1,4 +1,4 @@
-package com.pascalwelsch.circularprogressbarsample;
+package com.pascalwelsch.circularprogressbarsample.widget;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -14,6 +14,8 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+
+import com.pascalwelsch.circularprogressbarsample.R;
 
 
 public class CircularProgressBar extends View {
@@ -74,13 +76,13 @@ public class CircularProgressBar extends View {
         if (attributes != null) {
             try {
                 // 颜色
-                setProgressColor(attributes.getColor(R.styleable.CircularProgressBar_progress_color, Color.CYAN));
+                setProgressColor(attributes.getColor(R.styleable.CircularProgressBar_c_progress_color, Color.CYAN));
                 // 进度
-                setProgress(attributes.getFloat(R.styleable.CircularProgressBar_progress, 0.0f));
+                setProgress(attributes.getFloat(R.styleable.CircularProgressBar_c_progress, 0.0f));
                 //
-                setProgressPadding(attributes.getDimension(R.styleable.CircularProgressBar_progress_padding, 0));
+                setProgressPadding(attributes.getDimension(R.styleable.CircularProgressBar_c_progress_padding, 0));
                 //蒙板图片
-                int maskId = attributes.getResourceId(R.styleable.CircularProgressBar_mask_id, 0);
+                int maskId = attributes.getResourceId(R.styleable.CircularProgressBar_c_mask_id, 0);
                 if (maskId != 0) {
                     setMaskBitmap(BitmapFactory.decodeResource(context.getResources(), maskId));
                 }
