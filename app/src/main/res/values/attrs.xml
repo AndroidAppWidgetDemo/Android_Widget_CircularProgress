@@ -29,7 +29,7 @@
     </declare-styleable>
 
 
-    <!--圆形 进度条-->
+    <!--半圆形 进度条-->
     <declare-styleable name="SCProgressBar">
         <!--进度-->
         <attr name="sc_progress" format="float" />
