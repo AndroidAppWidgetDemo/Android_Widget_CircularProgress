@@ -46,14 +46,5 @@
     </declare-styleable>
 
 
-    <!--半圆形 进度条-->
-    <declare-styleable name="SportProgressView">
-        <attr name="startColor" format="reference|color" />
-        <attr name="endColor" format="reference|color" />
-        <attr name="emptyColor" format="reference|color" />
-        <attr name="stepTextSize" format="reference|dimension" />
-        <attr name="progressWidth" format="reference|dimension" />
-    </declare-styleable>
-
 
 </resources>
