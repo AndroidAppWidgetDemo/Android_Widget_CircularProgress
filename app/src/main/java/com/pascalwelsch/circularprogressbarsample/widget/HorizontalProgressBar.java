@@ -33,7 +33,7 @@ public class HorizontalProgressBar extends View {
     private static final String TAG = "AnimaProgressBar";
 
     // 动画时间
-    private final int ANIMA_TIME = 300;
+    private final int ANIMA_TIME = 1000;
     // 总共的级别
     private final int TOTAL_PROGRESS = 100;
 

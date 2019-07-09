@@ -21,7 +21,7 @@ import com.pascalwelsch.circularprogressbarsample.R;
 public class CircularProgressBar extends View {
 
     // 动画时长
-    private final int ANIMA_TIME = 300;
+    private final int ANIMA_TIME = 1000;
 
     /**
      *
