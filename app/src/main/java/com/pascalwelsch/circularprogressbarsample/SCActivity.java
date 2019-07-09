@@ -6,14 +6,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.pascalwelsch.circularprogressbarsample.widget.CircularProgressBar;
+import com.pascalwelsch.circularprogressbarsample.widget.SCProgressBar;
 
 /**
  *
  */
-public class CircularBarActivity extends Activity {
+public class SCActivity extends Activity {
     //
-    private CircularProgressBar mCircularProgressBar;
+    private SCProgressBar mCircularProgressBar;
     //
     private Button mOne;
     private Button mZero;
@@ -23,9 +23,9 @@ public class CircularBarActivity extends Activity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //
-        setContentView(R.layout.activity_circular);
+        setContentView(R.layout.activity_sc);
         // 进度条
-        mCircularProgressBar = (CircularProgressBar) findViewById(R.id.scProgressBar);
+        mCircularProgressBar = (SCProgressBar) findViewById(R.id.scProgressBar);
         // 从0到1的动画
         mOne = (Button) findViewById(R.id.one);
         mOne.setOnClickListener(new OnClickListener() {

@@ -5,16 +5,17 @@
     android:background="@android:color/white">
 
     <!--进度view-->
-    <com.pascalwelsch.circularprogressbarsample.widget.CircularProgressBar
+    <com.pascalwelsch.circularprogressbarsample.widget.SCProgressBar
         android:id="@+id/scProgressBar"
         android:layout_width="192dp"
-        android:layout_height="191dp"
+        android:layout_height="100dp"
         android:layout_centerInParent="true"
-        android:background="@drawable/wminutes_progress_bg"
-        app:c_mask_id="@drawable/wminutes_progress_mask"
-        app:c_progress="0.5"
-        app:c_progress_color="#f4ebd6"
-        app:c_progress_padding="13dp" />
+        app:sc_progress="0.5"
+        app:sc_progress_bg_color="#edf8f3"
+        app:sc_progress_color_end="#ff0000"
+        app:sc_progress_color_start="#79dbb0"
+        app:sc_progress_padding="3dp"
+        app:sc_progress_width="8dp" />
 
     <Button
         android:id="@+id/one"

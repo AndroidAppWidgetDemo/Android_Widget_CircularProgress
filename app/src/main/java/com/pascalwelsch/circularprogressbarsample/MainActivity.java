@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import com.pascalwelsch.circularprogressbarsample.widget.HorizontalProgressBar;
-
 /**
  *
  */
@@ -35,5 +33,14 @@ public class MainActivity extends Activity {
                 MainActivity.this.startActivity(intent);
             }
         });
+        //
+        findViewById(R.id.button03).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SCActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
     }
 }

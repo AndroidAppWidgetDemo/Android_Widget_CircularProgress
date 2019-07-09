@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--圆形 进度条-->
     <declare-styleable name="CircularProgressBar">
         <attr name="c_progress" format="float" />
         <attr name="c_progress_padding" format="dimension" />
@@ -26,5 +27,33 @@
         <attr name="h_progress" format="float" />
 
     </declare-styleable>
+
+
+    <!--圆形 进度条-->
+    <declare-styleable name="SCProgressBar">
+        <!--进度-->
+        <attr name="sc_progress" format="float" />
+        <!--左右panding-->
+        <attr name="sc_progress_padding" format="dimension" />
+        <!--进度颜色 begin-->
+        <attr name="sc_progress_color_start" format="color" />
+        <!--进度颜色 end-->
+        <attr name="sc_progress_color_end" format="color" />
+        <!--背景颜色-->
+        <attr name="sc_progress_bg_color" format="color" />
+        <!--进度条宽度-->
+        <attr name="sc_progress_width" format="dimension" />
+    </declare-styleable>
+
+
+    <!--半圆形 进度条-->
+    <declare-styleable name="SportProgressView">
+        <attr name="startColor" format="reference|color" />
+        <attr name="endColor" format="reference|color" />
+        <attr name="emptyColor" format="reference|color" />
+        <attr name="stepTextSize" format="reference|dimension" />
+        <attr name="progressWidth" format="reference|dimension" />
+    </declare-styleable>
+
 
 </resources>
